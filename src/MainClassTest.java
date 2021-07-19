@@ -3,15 +3,16 @@ import org.junit.Test;
 public class MainClassTest
 {
     @Test
-    public void testGetLocalNumber()
+    public void testGetClassNumber()
     {
-        int a = MainClass.getLocalNumber();
+        int a = MainClass.getClassNumber();
 
-                if (a==14)
-                {
-                    System.out.println("Method returns the expected value - 14");
-                } else {
-                    System.out.println("Method does not return the expected value - 14");
+            if (a>45)
+            {
+                System.out.println("Method returns the value bigger than 45");
+            } else {
+                    System.out.println("Error! Method should return the value bigger than 45");
                 }
     }
 }
+
