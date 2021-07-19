@@ -1,18 +1,20 @@
 import org.junit.Test;
 
+
 public class MainClassTest
 {
     @Test
-    public void testGetClassNumber()
+    public void testGetClassString()
     {
-        int a = MainClass.getClassNumber();
+        String text = MainClass.getClassString();
+        //String str = "Hello world"
+        int test1 = text.indexOf("Hello");
+        int test2 = text.indexOf("hello");
 
-            if (a>45)
-            {
-                System.out.println("Method returns the value bigger than 45");
-            } else {
-                    System.out.println("Error! Method should return the value bigger than 45");
-                }
+        if (test1 == 0 || test2 == 0) {
+            System.out.println("Test passed");
+        } else {
+            System.out.println("Test failed");
+            }
     }
 }
-
